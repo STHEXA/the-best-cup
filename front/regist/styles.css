@@ -1,0 +1,51 @@
+header {
+  width: 100%;
+  height: 60px;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  background-color: #7c91b8;
+}
+
+.header-container a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: black;
+}
+
+.header-container__title {
+  line-height: 60px;
+  font-size: 25px;
+  float: left;
+  margin-left: 15px;
+}
+
+.header-container__login {
+  display: inline;
+  line-height: 60px;
+  float: right;
+}
+
+.header-container__signup {
+  display: inline;
+  line-height: 60px;
+  float: right;
+}
+
+main {
+  height: calc(100vh - 60px);
+  background-color: #ddd7cb;
+}
+
+.title-container {
+  height: 30px;
+  width: 100%;
+  background-color: #776147;
+}
+
+.title-container p {
+  text-align: center;
+  line-height: 30px;
+}
