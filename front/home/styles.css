@@ -166,3 +166,47 @@ input[name="tab_item"] {
   background-color: #7c91b8;
   color: black;
 }
+
+/* 星評価 */
+
+.rate {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 16px;
+  font-size: 16px;
+}
+.rate:before, .rate:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 16px;
+  line-height: 16px;
+}
+.rate:before {
+  color: #ddd;
+}
+.rate:after {
+  color: #ffa500;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.rate0:after {
+  width: 0;
+}
+
+.rate2-5:after {
+  width: 40px;
+}
+
+.rate5:after {
+  width: 80px;
+}
+
+.evaluation {
+  width: 80px;
+  margin: 0 auto;
+}
