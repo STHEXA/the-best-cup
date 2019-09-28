@@ -210,3 +210,9 @@ input[name="tab_item"] {
   width: 80px;
   margin: 0 auto;
 }
+
+.details-container__form--textarea textarea {
+  resize: none;
+  width: 90%;
+  height:100px;
+}
