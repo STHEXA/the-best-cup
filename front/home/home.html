@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>The Best Cup</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <p class="header-container__title">The Best Cup</p>
+      <a href="#" class="header-container__signup">新規登録</a>
+      <a href="#" class="header-container__login">ログイン</a>
+    </div>
+  </header>
+  <aside>
+    <div class="side-container">
+      <p class="side-container__title">My Store</p>
+    </div>
+    <div class="side-container__store">
+      <p>Starbucks</p>
+      <img src="image/content_iStock-458083395-2.png" alt="store">
+    </div>
+    <div class="side-container__store">
+        <p>ドトールコーヒー</p>
+        <img src="image/topimg_dcs.png" alt="store">
+    </div>
+    <div class="side-container__add">
+      <a class="side-container__add-btn" href="#">
+        <i class="far fa-plus-square"></i>
+      </a>
+    </div>
+  </aside>
+  <main>
+    <div class="image-container">
+        <p>Starbucks</p>
+        <img src="image/coffeecup.png" alt="store">
+    </div>
+    <div class="details-container">
+      <div class="tabs">
+        <input id="about" type="radio" name="tab_item" checked>
+        <label class="tab_item" for="about">ABOUT</label>
+        <input id="memo" type="radio" name="tab_item">
+        <label class="tab_item" for="memo">MEMO</label>
+        <input id="edit"" type="radio" name="tab_item">
+        <label class="tab_item" for="edit">EDIT</label>
+        <div class="tab_content" id="about_content">
+            コーヒーについての情報
+          <div class="evaluation">
+            <span class="rate rate0"></span>
+            <span class="rate rate2-5"></span>
+            <span class="rate rate5"></span>
+          </div>
+        </div>
+        <div class="tab_content" id="memo_content">
+            コーヒーの感想
+        </div>
+        <div class="tab_content" id="edit_content">
+          <form class="details-container__form">
+            <label for="coffee-name">商品名</label>
+            <input id="coffee-name" type="text">
+            <label for="coffee-value">値段</label>
+            <input id="coffee-value" type="number">
+            <div class="msr_radio_04">
+              <p>味のタイプ</p>
+              <input type="radio" name="msr_radio_tye01" id="msr_04_radio01" />
+              <label for="msr_04_radio01">浅煎</label>
+              <input type="radio" name="msr_radio_tye01" id="msr_04_radio02" />
+              <label for="msr_04_radio02">深煎</label>
+            </div>
+            <div class="details-container__form--textarea">
+              <label for="text">メモ</label>
+              <textarea></textarea>
+            </div>
+            <p>写真</p>
+            <div class="msr_filebox_04">
+              <label for="file_photo04">画像を選択してください</label>
+              <input type="file" id="file_photo04">
+            </div>
+          </form>
+        </div>
+    </div>
+  </main>
+    
+</body>
+</html>
