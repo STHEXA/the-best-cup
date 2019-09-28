@@ -22,3 +22,49 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+# the best cup DB設計
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false, add_index|
+|email|string|null: false, unique: true|
+|password|string|null: false, unique: true|
+### Association
+- has_many :stores
+
+## storesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|visit_day|date|null: false|
+|user_id|references|null: false, foreign_key: true|
+|product_id|references|null: false, foreign_key: true|
+|image_id|references|null: false, foreign_key: true|
+### Association
+- belongs_to :user
+- has_many :products
+- has_many :images
+
+
+## productsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|name|string|null: false|
+|price|int||
+|taste|string|null: false|
+|memo|text||
+|store_id|references|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|image_id|references|null: false, foreign_key: true|
+### Association
+- belongs_to :product
+- belongs_to :user
+
+## imageテーブル
+|Column|Type|Options|
+|------|----|-------|
+|store_id|references|null: false, foreign_key: true|
+|product_id|references|null: false, foreign_key: true|
+### Association
+- belongs_to :product
+- belongs_to :store
