@@ -13,6 +13,7 @@
       <p class="header-container__title">The Best Cup</p>
       <a href="#" class="header-container__signup">新規登録</a>
       <a href="#" class="header-container__login">ログイン</a>
+      <a href="#" class="header-container__use">使い方</a>
     </div>
   </header>
   <aside>
@@ -59,25 +60,27 @@
         </div>
         <div class="tab_content" id="edit_content">
           <form class="details-container__form">
-            <label for="coffee-name">商品名</label>
+            <label for="coffee-name">商品名:</label>
             <input id="coffee-name" type="text">
-            <label for="coffee-value">値段</label>
+            <label for="coffee-value">値段:</label>
             <input id="coffee-value" type="number">
-            <div class="msr_radio_04">
+            <div class="form__radio">
               <p>味のタイプ</p>
-              <input type="radio" name="msr_radio_tye01" id="msr_04_radio01" />
-              <label for="msr_04_radio01">浅煎</label>
-              <input type="radio" name="msr_radio_tye01" id="msr_04_radio02" />
-              <label for="msr_04_radio02">深煎</label>
+              <input type="radio" name="roast-radio" id="light-roast" checked="checked">
+              <label for="light-roast">浅煎・・・酸味が強め　フルーティー系</label>
+              <input type="radio" name="roast-radio" id="deep-roast">
+              <label for="deep-roast">深煎・・・苦味が強い　ダークチョコレート系</label>
             </div>
             <div class="details-container__form--textarea">
               <label for="text">メモ</label>
               <textarea></textarea>
             </div>
             <p>写真</p>
-            <div class="msr_filebox_04">
-              <label for="file_photo04">画像を選択してください</label>
-              <input type="file" id="file_photo04">
+            <div class="form-container__image">
+              <div class="form-container__image--box">
+                <label for="store-image">画像を選択してください</label>
+                <input type="file" id="store-image">
+              </div>
             </div>
           </form>
         </div>
