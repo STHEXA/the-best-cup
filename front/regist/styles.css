@@ -52,7 +52,6 @@ main {
 
 form {
   width: 100%;
-  text-align: center;
 }
 
 .form-container {
@@ -77,6 +76,14 @@ form {
   width: 460px;
 }
 
+.form-container__name label {
+  text-align: center;
+}
+
+.form-container__visitDay label {
+  text-align: center;
+}
+
 .form-container__image {
   padding-bottom: 20px;
   width: 460px;
@@ -85,7 +92,13 @@ form {
 .form-container__image p {
   font-size: 14px;
   padding-bottom: 5px;
+  text-align: center;
 }
+
+.form-container__image--box {
+  background-color: #fff;
+}
+
 .form-container__image--box input[type=file] {
   display: none;
 }
@@ -120,6 +133,9 @@ form {
   width: 99px;
 }
 
+.form-container__submit {
+  text-align: center;
+}
 .btn-square-so-pop {
   position: relative;
   display: inline-block;
