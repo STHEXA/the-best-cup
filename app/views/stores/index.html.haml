@@ -1,0 +1,19 @@
+%body.stores
+  = render partial: 'layouts/header'
+  %main
+    .title-container
+      %p My Storeを登録しよう！
+    %form.form-container
+      .form-container__name
+        %label Store Name
+        %input{:type => "text"}/
+      .form-container__visitDay
+        %label Visit Day
+        %input{:type => "date"}/
+      .form-container__image
+        %p file
+        .form-container__image--box
+          %label{:for => "store-image"} 画像を選択してください
+          %input#store-image{:type => "file"}/
+      %p.form-container__submit
+        %a.btn-square-so-pop{:href => "#"} Record
